@@ -8,7 +8,8 @@ RSpec.describe Helpers do
         '4-5 l: rllllj',
         '4-10 s: ssskssphrlpscsxrfsr',
         '14-18 p: ppppppppppppppppppp',
-        '1-6 z: zzlzvmqbzzclrz'
+        '1-6 z: zzlzvmqbzzclrz',
+        '1-2 a: babbbbbbbb'
       ]
     end
   end
@@ -21,25 +22,31 @@ RSpec.describe Helpers do
           min: 4,
           max: 5,
           letter: 'l',
-          password: 'rllllj' #valid password
+          password: 'rllllj'
         },
         {
           min: 4,
           max: 10,
           letter: 's',
-          password: 'ssskssphrlpscsxrfsr' #valid password
+          password: 'ssskssphrlpscsxrfsr'
         },
         {
           min: 14,
           max: 18,
           letter: 'p',
-          password: 'ppppppppppppppppppp' #invalid password
+          password: 'ppppppppppppppppppp'
         },
         {
           min: 1,
           max: 6,
           letter: 'z',
-          password: 'zzlzvmqbzzclrz' #valid password
+          password: 'zzlzvmqbzzclrz'
+        },
+        {
+          min: 1,
+          max: 2,
+          letter: 'a',
+          password: 'babbbbbbbb'
         }
       ]
     end
